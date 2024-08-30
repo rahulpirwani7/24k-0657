@@ -1,0 +1,5 @@
+input number1;
+input number2;
+input number3;
+set sum to -(-number1-number2-number3);
+print sum;
