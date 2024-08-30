@@ -1,0 +1,16 @@
+ask user to enter number
+if number is 1 then display month is january
+else if number is 2 then display month is february 
+else if number is 3 then display month is march
+else if number is 4 then display month is april
+else if number is 5 then display month is may
+else if number is 6 then display month is june 
+else if number is 7 then display month is july
+else if number is 8 then display month is augest
+else if number is 9 then display month is september
+else if number is 10 then display month is october
+else if number is 11 then display month is november
+else if number is 12 then display month is december
+else display you did not select the number from 1 to 12
+
+
