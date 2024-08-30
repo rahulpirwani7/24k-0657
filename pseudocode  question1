@@ -1,0 +1,10 @@
+input number1;
+intput number2;
+input number3;
+if number1 >=number2 and number1 >= number3 then
+   print "number1 is greatest"
+else 
+    if number2 >= number3 then
+    print "number2 is greatest"
+    else 
+    print "number3 is greatest"
