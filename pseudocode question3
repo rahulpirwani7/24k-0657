@@ -1,0 +1,12 @@
+input number1;
+input number2;
+input operator;
+set resultant to 0;
+if operator==+ then 
+   set resultant to number1+ number2;
+else if operator==- then
+   set resultant to number1-number2;
+else 
+    print "please select the valid operator";
+print resultant;
+
