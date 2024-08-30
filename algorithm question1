@@ -1,0 +1,6 @@
+1. ask user to enter Nth
+2. ask user to enter n 
+3.if n is divided by Nth and remainder is 0 then 
+ 4. if n is divided by 2 and remainder is also 0 then display Nth is a divisor of n and n is even
+ 5. else display Nth is a divisor of n and n is odd
+6. else display Nth is not a  divisor of n
