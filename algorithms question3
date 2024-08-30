@@ -1,0 +1,9 @@
+ask user to enter number1;
+ask user to enter number2;
+ask user to select one of them (+,-,*,/,%)
+if user selected + then set resultant to  number1 + number2
+else if user selected - then set resultant to number1 - number2
+else if  user selected * then set resultant to number1* number2
+else if user selected / then set resultant to number1/number2
+else if user selected % then set resultant to number1%number2
+display resultant 
