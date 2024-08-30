@@ -9,5 +9,5 @@
 * i did my matric from saint johns grammer school kandhkot
 * i did my intermediate from degree college kandhkot
 * currently i am in fast university
-
-
+## Picture
+![myself](https://github.com/user-attachments/assets/15dd7acc-c076-4634-ba52-f49f42797d62)
