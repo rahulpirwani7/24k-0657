@@ -130,43 +130,6 @@
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 176
-        },
-        "id": "qbLpuOyEBpIr",
-        "outputId": "b601f7d9-8f7f-4396-c0ec-da3ce6ab617d"
-      },
-      "outputs": [
-        {
-          "ename": "TypeError",
-          "evalue": "'tuple' object is not callable",
-          "output_type": "error",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipykernel_11989/4178472945.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0mdf\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mdf\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m~\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdf\u001b[0m \u001b[0;34m<\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mQ1\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0;36m1.5\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mIQR\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m|\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mdf\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mQ3\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m1.5\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mIQR\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0many\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0maxis\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 10\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdf\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object is not callable"
-          ]
-        }
-      ],
-      "source": [
-        "df=df[['WindSpeed','Sunshine','AirPressure','Radiation','AirTemperature','RelativeAirHumidity',\"SystemProduction\"]]\n",
-        "\n",
-        "Q1 = df.quantile(0.25)\n",
-        "Q3 = df.quantile(0.75)\n",
-        "\n",
-        "IQR = Q3 - Q1\n",
-        "\n",
-        "df = df[~((df < (Q1 - 1.5 * IQR)) | (df > (Q3 + 1.5 * IQR))).any(axis=1)]\n",
-        "\n",
-        "print(df.)\n"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
           "height": 441
         },
         "id": "FLv6c77UQb3V",
@@ -621,10 +584,13 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "y0CMY80IZ1sC",
-        "outputId": "844171eb-c32c-40e3-b30b-7bdf548d1245"
+        "outputId": "2642763e-58ea-4c1c-fd55-4388c6e75045"
       },
       "outputs": [
         {
+          "metadata": {
+            "tags": null
+          },
           "name": "stdout",
           "output_type": "stream",
           "text": [
@@ -882,7 +848,7 @@
         "runtime_version": "2026.04"
       },
       "provenance": [],
-      "authorship_tag": "ABX9TyPYg+kJO6kMt0t8VHtcpv4V",
+      "authorship_tag": "ABX9TyNMAVVIfgjLSISzCwic7l1p",
       "include_colab_link": true
     },
     "kernelspec": {
